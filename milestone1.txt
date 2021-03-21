@@ -1,0 +1,17 @@
+try:
+    n=int(input('enter no. of entries '))
+    l=[]
+    for i in range(n):
+        x=int(input('enter values'))
+        l.append(x)
+    for i in range(len(l)):
+        if (i==(n-1)):
+            break
+        elif (l[i]>l[i+1]):
+            highest=l[i]
+            l[i+1]=l[i]
+        else:
+            highest=l[i+1]
+    print('highest number = ',highest)
+except:
+    print('entered non integer value')
